@@ -1,0 +1,53 @@
+{% extends "index.html" %}
+
+
+{% block content %}
+<div class="first-line">
+    <h4>Do you want to talk or Convey your message?</h4>
+    <div class="container">
+        <form action="{{url_for('contact')}}" method="POST" autocomplete="off" style="font-size: 18px;">
+            <label for="name">
+                <i class="fas"></i>
+            </label>
+            <input type="text" id="fname" name="name" placeholder="Your name.." style="font-size: 18px;" required>
+            <label for="email">
+                <i class="fas"></i>
+            </label>
+
+            <input type="text" id="email" name="email" placeholder="Your Email" style="font-size: 18px;" required>
+            <label for="subject">
+                <i class="fas"></i>
+            </label>
+            <input type="text" id="subject" name="subject" placeholder="Subject.." style="font-size: 18px;" required>
+
+            <label for="comment">
+                <i class="fas"></i>
+            </label>
+            <textarea id="comment" name="comment" placeholder="Message.." style="height:200px" required></textarea>
+            <input type="submit" value="Submit">
+
+        </form>
+       
+    </div>
+
+
+    <div class="social-icons">
+        <a target="_blank" href="https://github.com/akshay-varshney/">
+            <img class="title-logo" src="/static/images/github.svg">
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/akshay-varshney-03a3a4131/">
+            <img class="title-logo" src="/static/images/linkedin-logo.svg">
+        </a>
+        <a target="_blank" href="https://www.instagram.com/akshay__varshney/">
+            <img class="title-logo" src="/static/images/insta.svg">
+        </a><a target="_blank" href="https://twitter.com/akshayvarshney6">
+            <img class="title-logo" src="/static/images/twitter.svg">
+        </a>
+    </div>
+    <br/>
+    <p class="cp-text" style="font-size: 15px;">
+
+        © Copyright 2020 Akshay Varshney. All rights reserved.
+    </p>
+
+    {% endblock %}

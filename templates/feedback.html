@@ -1,0 +1,11 @@
+{% extends "index.html" %}
+
+{% block content %}
+<div>
+    {% if msg %}
+    <div class="thankyou">Thank you {{msg}}, for your message. Akshay will contact you shortly.</div>
+    {% endif %}
+</div>
+<div class="another-response"><a href="{{ url_for('home') }}">Home Page!</a></div>
+
+{% endblock %}

@@ -1,0 +1,179 @@
+* {
+    font-family: 'Spectral SC', serif;
+}
+.first-line{
+    text-align: center;
+    
+    margin: auto;
+    padding-top: 50px;
+    font-size: 22px;
+}
+
+.home {
+    text-decoration:none;
+   
+    margin-right: 10px; 
+}
+
+.about {
+    
+    margin-right: 40px;
+    text-decoration:none;
+    
+
+}
+.project {
+    
+    text-decoration:none;
+    
+    margin-right: 10px;
+}
+.contact {
+    
+    text-decoration:none;
+   
+    margin-right: 10px; 
+}
+.project:hover, .contact:hover, .about:hover, .home:hover {
+    background-color: #cec2db;
+    transition: background-color 0.2s;
+}
+
+.quiz-app {
+    
+    font-size: 20px;
+    text-align: center;
+    
+    font-weight: bold;
+    border-bottom: 2px solid rgb(139, 7, 7);
+    
+}
+
+.submit {
+    width: 50%;
+    height: 5%;
+    background-color: rgb(71, 21, 21);
+    font-size: 20px;
+    color: blanchedalmond;
+}
+
+
+
+.user-comment {
+    width: 50%;
+    border-radius: 4px;
+}
+
+
+.name 
+{
+padding-top:4px ;
+padding-bottom: 4px ;    
+margin-left: 20px;    
+Width: 300px;
+Text-align: left;
+Float: left;
+Display: block;
+font-size: 20px;
+border-radius: 4px;
+
+}
+
+.email
+{
+padding-top:4px ;
+padding-bottom: 4px ;    
+margin-left: 20px;    
+Width: 300px;
+Text-align: left;
+font-size: 20px;
+Float: left;
+Display: block;
+border-radius: 4px;
+margin-bottom: 20px ;
+}
+
+
+
+input[type=text], select, textarea {
+    width: 50%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+    
+    
+  }
+  
+  
+  input[type=submit] {
+    display: block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: auto;
+    
+  }
+  
+  input[type=submit]:hover {
+    background-color: rosybrown;
+  }
+  
+
+  .container {
+    padding: 20px;
+  }
+
+  .title-logo {
+    height: 24px;
+    width: 24px;
+    margin: 0px 12px 0px 2px;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    text-decoration: none;
+
+  }
+  .title-logo:hover{
+    background-color: rgb(119, 230, 123) 
+  }
+
+ .cp-text{ color: rgba(0,0,0,.7); text-shadow: 0 1px rgba(255, 255, 255, 0.1);}
+
+ .navlink a:hover:not(.active) {
+    background-color: #4CAF50;
+
+}
+
+.title-lo {
+    height: 24px;
+    width: 24px;
+    margin: 0px 12px 0px 2px;
+ 
+    text-decoration: none;
+
+  }
+
+.home-img {
+    border: 4px solid brown;
+    border: 5px;
+}
+
+.thankyou {
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.another-response {
+    text-align: center;
+    font-size: 20px;
+    color: blue;
+    
+}
