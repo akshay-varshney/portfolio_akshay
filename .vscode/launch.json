@@ -10,7 +10,7 @@
             "request": "launch",
             "module": "flask",
             "env": {
-                "FLASK_APP": "/Users/dinkar/Desktop/Projects/Portfolio_Akshay/main.py",
+                "FLASK_APP": "/Users/dinkar/Desktop/Projects/Portfolio_Akshay/app.py",
                 "FLASK_ENV": "development",
                 "FLASK_DEBUG": "0"
             },
