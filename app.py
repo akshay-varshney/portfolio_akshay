@@ -42,8 +42,11 @@ def projects():
 @app.route('/feedback/',methods=['POST','GET'])
 def feedback():
     msg=''
-    messages = request.args['messages']  # counterpart for url_for()
-    messages = session['messages']  
+    messages=''
+    #if messages:
+    if request.method=='GET':
+        messages = request.args['messages']  # counterpart for url_for()
+        messages = session['messages']  
     return render_template('feedback.html',msg=messages)
 
 
