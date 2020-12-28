@@ -1,6 +1,8 @@
 from flask import Flask,redirect,render_template,request,url_for,redirect,session
 from flask_mysqldb import MySQL
 import re
+import logging 
+import sys
 import MySQLdb
 
 app=Flask(__name__)
@@ -11,6 +13,8 @@ app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = 'password'
 app.config['MYSQL_DB'] = 'potfolio'
 mysql = MySQL(app)
+app.logger.addHandler(logging.StreamHandler(sys.stdout))
+app.logger.setLevel(logging.ERROR)
 @app.route('/home/')
 def home():
     return render_template('home.html')
@@ -44,10 +48,10 @@ def feedback():
     msg=''
     messages=''
     #if messages:
-    if request.method=='GET':
-        messages = request.args['messages']  # counterpart for url_for()
-        messages = session['messages']  
-    return render_template('feedback.html',msg=messages)
+    #if request.method=='GET':
+    #    messages = request.args['messages']  # counterpart for url_for()
+    #    messages = session['messages']  
+    return render_template('feedback.html')#,msg=messages)
 
 
 if __name__=="__main__":
