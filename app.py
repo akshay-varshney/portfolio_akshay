@@ -27,9 +27,9 @@ def contact():
         email = request.form['email']
         subject = request.form['subject']
         comment = request.form['comment']
-        cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
-        cursor.execute('INSERT INTO portfolio_akshay VALUES (%s, %s, %s,%s)',(name, email, subject, comment,))
-        mysql.connection.commit()
+        #cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
+        #cursor.execute('INSERT INTO portfolio_akshay VALUES (%s, %s, %s,%s)',(name, email, subject, comment,))
+        #mysql.connection.commit()
         messages=name
         session['messages'] = messages
         return redirect(url_for('feedback',messages=messages))
@@ -48,10 +48,10 @@ def feedback():
     msg=''
     messages=''
     #if messages:
-    #if request.method=='GET':
-    #    messages = request.args['messages']  # counterpart for url_for()
-    #    messages = session['messages']  
-    return render_template('feedback.html')#,msg=messages)
+    if request.method=='GET':
+        messages = request.args['messages']  # counterpart for url_for()
+        messages = session['messages']  
+    return render_template('feedback.html',msg=messages)
 
 
 if __name__=="__main__":
