@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 
@@ -17,18 +17,16 @@
                 <a class="navbar-brand" href="/home/">Akshay Varshney</a>
             </div>
             <ul class="nav navbar-nav">
-                
+
                 <li class="navlink" id="gist_code"><a href="/about">About</a></li>
                 <li class="navlink" id="blog_post"><a href="/projects">Previous Work</a></li>
                 <li class="navlink" id="contactme"><a href="/contact">Contact</a></li>
             </ul>
         </div>
-        </nav>
-        <div>
-            {% block content %} {% endblock %}
+    </nav>
+    <div>
+        {% block content %} {% endblock %}
 
-        </div>
-       
+    </div>
+
 </body>
-
-

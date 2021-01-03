@@ -1,0 +1,12 @@
+Created a simple portfolio using HTML, CSS and Flask Python framework.
+
+Database used is MYSQL.
+
+Steps:
+1. Convert the .sql file to .db file by following the steps mentioned in this url.
+https://www.mysqltutorial.org/mysql-copy-database/
+
+2. Go the project/cloned directory.
+3. In cmd/terminal run the command: 
+python app,py
+
